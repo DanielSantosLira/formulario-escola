@@ -11,83 +11,88 @@
 </head>
 
 <body>
-   
-    <h1>Cadastro</h1>
-    <label for="firstname">Nome:</label>
-    <input type="text" name="nome" id="nome">
-    <label for="lastname">Sobrenome:</label>
-    <input type="text" name="sobrenome" id="sobrenome" required>
+    <form action="">
+        <fieldset >
+            <h1>Cadastro</h1>
+            <label for="firstname">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <label for="lastname">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="sobrenome" required>
 
+            <br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="text" name="email" id="email" required>
+
+            <br><br>
+
+            <label for="passowoed">Senha:</label>
+            <input type="password" name="senha" id="senha" required>
+            <label for="Confimepassowoed">Confirme a Senha:</label>
+            <input type="password" name="confirmesenha" id="confirmesenha" required>
+
+            <br><br>
+
+            <label for="date">Data de Nascimento:</label>
+            <input type="date" name="data" id="data">
+
+            <br><br>
+            <label for="text">Endereço:</label>
+            <input type="text" name="endereco" id="endereco">
+
+            <label for="number">Número:</label>
+            <input type="namber" name="tNum" id="tNum">
+
+            <br><br>
+
+            <label for="text">Cidade:</label>
+            <input type="text" name="cidade" id="cidade">
+
+            <label for="cEst"> Estado:</label>
+            <select name="tEst" id="tEst">
+                <OPtgroup label="Região Sudeste">
+                    <option value="RJ">Rio de Janariro</option>
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="MG">Minas Gerais</option>
+                </OPtgroup>
+                <OPtgroup label="Região Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="PB">Pernambuco</option>
+                </OPtgroup>
+                <OPtgroup label="Região Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </OPtgroup>
+                <br><br>
+
+               
+            </select>
+            <br><br>
+            <button onclick="Salvar()">Salvar</button>
+        </fieldset>
+    </form>
     <br><br>
 
-    <label for="email">E-mail:</label>
-    <input type="text" name="email" id="email" required>
+    <table id="linha" border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>E-mail</th>
+                <th>Senha</th>
+                <th>Confirme a Senha</th>
+                <th>Data de Nascimento</th>
+                <th>Endereço</th>
+                <th>Número</th>
+                <th>Cidade</th>
+                <th>Estado</th>
+            </tr>
+        </thead>
+    </table>
 
-    <br><br>
-
-    <label for="passowoed">Senha:</label>
-    <input type="password" name="senha" id="semha" required>
-    <label for="Confimepassowoed">Confirme a Senha:</label>
-    <input type="password" name="confirmesenha" id="confirmesenha"  required>
-
-    <br><br>
-
-    <label for="date">Data de Nascimento:</label>
-    <input type="date" name="data">
-
-    <br><br>
-    <label for="text">Endereço:</label>
-    <input type="text" name="endereco" id="endereco">
-
-    <label for="number">Número:</label>
-    <input type="namber" name="tNum" id="tNum" >
-
-    <br><br>
-
-    <label for="text">Cidade:</label>
-    <input type="text" name="cidade" id="cidade">
-
-    <label for="cEst"> Estado:</label>
-    <select name="tEst" id="tEst">
-        <OPtgroup label="Região Sudeste">
-            <option value="RJ">Rio de Janariro</option>
-            <option value="SP" selected>São Paulo</option>
-            <option value="MG">Minas Gerais</option>
-        </OPtgroup>
-        <OPtgroup label="Região Nordeste">
-            <option value="AL">Alagoas</option>
-            <option value="PB">Pernambuco</option>
-        </OPtgroup>
-        <OPtgroup label="Região Sul">
-            <option value="PR">Paraná</option>
-            <option value="PR">Paraná</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="RS">Rio Grande do Sul</option>
-        </OPtgroup>
-        <br><br>
-
-        <button>Salvar</button>
-    
-        <br><br>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Sobrenome</th>
-                    <th>E-mail</th>
-                    <th>Senha</th>
-                    <th>Confirme a Senha</th>
-                    <th>Data de Nascimento</th>
-                    <th>Endereço</th>
-                    <th>Número</th>
-                    <th>Cidade:</th>
-                    <th>Estado:</th>
-                </tr>
-            </thead>
-        </table>
-
-        <script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
