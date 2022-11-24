@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@800&family=Inter:wght@100;200;300;400;500;600&family=Noto+Sans:ital,wght@1,600&family=Titillium+Web&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+.conteiner {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .212);
+}
+.form-img {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+}
+.form-img img {
+    width: 31rem;
+    margin-right: auto;
+}
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+
+}
+.input-group {
+    width: 238px;
+    height: 41px;
+    left: 558px;
+    top: 293px;
+    
+    background: #F0F0F0;
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.input-box input {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
