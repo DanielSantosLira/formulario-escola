@@ -5,92 +5,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
 
     <title>Formulario</title>
 </head>
 
 <body>
-    <div class="conteiner">
-        <div class="form-img">
-            <img src="img/Rectangle 1.png" alt="">
-        </div>
-        <div class="form">
-            <form action="">
-                <div class="herder">
-                    <div class="titulo">
-                        <h1>Cadastro</h1>
-                    </div>
-                    <div class="input-gruup">
-                        <div class="input-box">
-                            <label for="firstname">Nome</label>
-                            <input type="text" name="nome" id="nome">
-                        </div>
-                        <div class="input-box">
-                            <label for="lastname">Sobrenome</label>
-                            <input type="text" name="sobrenome" id="sobrenome" required>
-                        </div>
-                        <div class="input-box">
-                            <label for="email">E-mail</label>
-                            <input type="text" name="email" id="email" required>
-                        </div>
-                        <div class="input-box">
-                            <label for="passowoed">Senha </label>
-                            <input type="password" name="senha" id="semha" required>
-                        </div>
-                        <div class="input-box">
-                            <label for="Confimepassowoed">Confirme a Senha</label>
-                            <input type="password" name="confirmesenha" id="confirmesenha" required>
-                        </div>
-                        <div class="input-box">
-                            <label for="date">Data de Nascimento</label>
-                            <input type="date" name="data"  >
-                        </div>
-                        <div class="input-box">
-                            <label for="text">Endereço</label>
-                            <input type="text" name="endereco" id="endereco">
-                        </div>
-                        <div class="input-box">
-                            <label for="number">Número:</label>
-                            <input type="number" name="numero" id="numero">
-                        </div>
-                        <div class="input-box">
-                            <label for="number">Número:</label>
-                            <input type="number" name="numero" id="numero">
-                        </div>
-                        <div class="input-box">
-                            <label for="text">Cidade:</label>
-                            <input type="text" name="cidade" id="cidade">
-                        </div>
-                        <div class="input-box">
-                            <label for="text">Estado:</label>
-                            <input type="" name="estado" id="estado">
-                        </div>
+   
+    <h1>Cadastro</h1>
+    <label for="firstname">Nome:</label>
+    <input type="text" name="nome" id="nome">
+    <label for="lastname">Sobrenome:</label>
+    <input type="text" name="sobrenome" id="sobrenome" required>
 
-                        <button>Salvar</button>
+    <br><br>
 
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <table>
-        <thead>
-            <tr>
-                <th>Nome</th>
-                <th>Sobrenome</th>
-                <th>E-mail</th>
-                <th>Senha</th>
-                <th>Confirme a Senha</th>
-                <th>Data de Nascimento</th>
-                <th>Endereço</th>
-                <th>Número</th>
-                <th>Cidade:</th>
-                <th>Estado:</th>
-            </tr>
-        </thead>
-      </table>
-       <script src="app.js"></script>
+    <label for="email">E-mail:</label>
+    <input type="text" name="email" id="email" required>
+
+    <br><br>
+
+    <label for="passowoed">Senha:</label>
+    <input type="password" name="senha" id="semha" required>
+    <label for="Confimepassowoed">Confirme a Senha:</label>
+    <input type="password" name="confirmesenha" id="confirmesenha"  required>
+
+    <br><br>
+
+    <label for="date">Data de Nascimento:</label>
+    <input type="date" name="data">
+
+    <br><br>
+    <label for="text">Endereço:</label>
+    <input type="text" name="endereco" id="endereco">
+
+    <label for="number">Número:</label>
+    <input type="namber" name="tNum" id="tNum" >
+
+    <br><br>
+
+    <label for="text">Cidade:</label>
+    <input type="text" name="cidade" id="cidade">
+
+    <label for="cEst"> Estado:</label>
+    <select name="tEst" id="tEst">
+        <OPtgroup label="Região Sudeste">
+            <option value="RJ">Rio de Janariro</option>
+            <option value="SP" selected>São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+        </OPtgroup>
+        <OPtgroup label="Região Nordeste">
+            <option value="AL">Alagoas</option>
+            <option value="PB">Pernambuco</option>
+        </OPtgroup>
+        <OPtgroup label="Região Sul">
+            <option value="PR">Paraná</option>
+            <option value="PR">Paraná</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="RS">Rio Grande do Sul</option>
+        </OPtgroup>
+        <br><br>
+
+        <button>Salvar</button>
+    
+        <br><br>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>E-mail</th>
+                    <th>Senha</th>
+                    <th>Confirme a Senha</th>
+                    <th>Data de Nascimento</th>
+                    <th>Endereço</th>
+                    <th>Número</th>
+                    <th>Cidade:</th>
+                    <th>Estado:</th>
+                </tr>
+            </thead>
+        </table>
+
+        <script src="app.js"></script>
 </body>
 
 </html>
