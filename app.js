@@ -13,8 +13,8 @@ function Salvar() {
 
    console.log(nome, sobrenome, email, senha, confirmesenha, data, cidade, Est, endereco, tNum)
 
-    let linha = "<tr><td>" + nome + "</td><td>" + sobrenome +"</td><td>"  + email + "</td><td>" + senha + "</td><td>" + confirmesenha + "</td><td>" + data + "</td><td>" + cidade + "</td><td>" + Est + "</td><td>" + endereco + "</td><td>" + tNum + "</td></tr>"
-    document.getElementById("cliente").innerHTML += linha
+    let linha = "<tr><td>" + nome + "</td><td>" + sobrenome +"</td><td>"  + email + "</td><td>" + senha + "</td><td>" + confirmesenha + "</td><td>" + data + "</td><td>"  + endereco + "</td><td>" + tNum + "</td><td>"    + cidade +"</td><td>" + Est + "</td></tr>"
+    document.getElementById("cliente").innerHTML += linha 
 
 }   
 
